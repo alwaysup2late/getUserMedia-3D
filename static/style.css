@@ -1,0 +1,128 @@
+html,
+body {
+	margin: 0;
+	padding: 0;	
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	min-height: 100%;
+	background-color: #000;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+#firstVideo {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 2;
+
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-ms-filter: "FlipH";
+	filter: FlipH;
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+#firstCanvas {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+#imgGroup {
+	display: none;
+}
+
+#image-reel {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -300px;
+	z-index: 3;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#image-reel img {
+	-webkit-filter: brightness(135%);
+	-moz-filter: brightness(135%);
+	-ms-filter: brightness(135%);
+	-o-filter: brightness(135%);
+	filter: brightness(135%);
+}
+
+#controls {
+	display: none;
+	width: 150px;
+	z-index: 3;
+}
+
+section {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+}
+
+section > div {
+	margin-bottom: 20px;
+}
+
+section > div:last-child {
+	margin-bottom: 0;
+}
+
+strong {
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+button {
+	height: 30px;
+	color: #FFF;
+	border: none;
+	outline: none;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #15CA9D;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+	background: #333;
+}
+
+button {
+	display: block;
+	cursor: pointer;
+	width: 90px;
+}
+
+section,
+button,
+#image-reel {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#stopRecording,
+#clearRecording {
+	display: none;
+}
